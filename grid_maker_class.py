@@ -21,8 +21,6 @@ class Grid_Maker():
             for x in range(self.length):
                 self.grid[i].append('_')
         
-
-
     def dungeon_setup(self):
         #player position set up allways (0,0) at the start 
         self.grid[0].insert(0, 'p')
