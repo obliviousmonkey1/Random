@@ -1,5 +1,5 @@
 # Random
-A bunch of random projects that I have done
+A bunch of random projects that we have done
 
 grid_maker:
   Grid maker gets you to input grid height and length.
