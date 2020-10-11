@@ -1,7 +1,7 @@
 # Python game without pygame 
 
 A adventure dungeon crawling loot game.
-dungeon contains many floors(levels) within those levels are a serious of conected rooms:
+dungeon contains many floors(levels) within those levels are a serious of conected rooms, 1 space is equivalent to 5ft: 
 
 
 Parameters for a dungeon room:
