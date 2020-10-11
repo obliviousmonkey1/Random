@@ -1,0 +1,66 @@
+{
+    "1": {
+        "NAME_SPELL": "Acid Splash",
+        "CASTING_TIME": 1,
+        "RANGE": 60,
+        "COMPONENTS": [
+            "V",
+            "S"
+        ],
+        "DURATION": 0,
+        "SAVING_THROW": [
+            true,
+            "DEX"
+        ],
+        "DAMAGE_TYPE": [
+            true,
+            "Acid"
+        ],
+        "RESISTANCE_TYPE": false,
+        "DAMAGE_INCREASE": [
+            true,
+            "1d6",
+            5
+        ]
+    },
+    "2": {
+        "NAME_SPELL": "Blade Ward",
+        "CASTING_TIME": 1,
+        "RANGE": 0,
+        "COMPONENTS": [
+            "V",
+            "S"
+        ],
+        "DURATION": 1,
+        "SAVING_THROW": false,
+        "DAMAGE_TYPE": false,
+        "RESISTANCE_TYPE": [
+            true,
+            "Bludgeoning",
+            "Piercing",
+            "Slashing"
+        ],
+        "DAMAGE_INCREASE": false
+    },
+    "3": {
+        "NAME_SPELL": "Chill Touch",
+        "CASTING_TIME": 1,
+        "RANGE": 120,
+        "COMPONENTS": [
+            "V",
+            "S"
+        ],
+        "DURATION": 0,
+        "SAVING_THROW": false,
+        "DAMAGE_TYPE": [
+            true,
+            "Disadvantage"
+        ],
+        "RESISTANCE_TYPE": false,
+        "DAMAGE_INCREASE": [
+            true,
+            "1d8",
+            5
+        ]
+    }
+}
