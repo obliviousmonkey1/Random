@@ -1,4 +1,5 @@
 import random
+# OUTDATED 
 
 ''' What we need'''
 #Need height of list (y)
@@ -181,4 +182,5 @@ while b == True:
         grid, player_pos, a = movement(grid, player_pos, a)
 
     score+=1
+    
 
