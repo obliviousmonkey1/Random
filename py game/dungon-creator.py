@@ -33,10 +33,7 @@ for i in range(height+1):
         level.append(CHARACTER_TILES['stone'] * width)
 
 
-print('\n')
-print(room_list)
-
-##############################################Grid Layout###############################################
+############################################# Grid Layout ##############################################
 
 #Appends rooms to the level
 for i in (room_list):
@@ -45,15 +42,15 @@ for i in (room_list):
             i[1]+=1
 
 
-########################################################################################################
+######################################################################################################## 
 
+# Before 
 a = 0
 for i in range(height):
     print(level[i], f'{a}')
     a+=1
-    
-print(len(level))
 
+#################################### Checks if tiles missing from grid #################################
 
 for i in range(len(room_list)):
     for x in range(height):
@@ -64,8 +61,11 @@ for i in range(len(room_list)):
                 add_walls = width - len(level[x])
                 
                 level[x] = level[x] + (CHARACTER_TILES['stone'] * add_walls)
+                
+######################################################################################################## 
 
-print(room_list)
+# after 
+print('List of rooms, {x, y, w, h}',room_list)
 a = 0
 for i in range(height):
     print(level[i], f'{a}')
