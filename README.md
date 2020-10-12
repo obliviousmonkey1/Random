@@ -6,13 +6,11 @@ dungeon contains many floors(levels) within those levels are a serious of conect
 
 Parameters for a dungeon room:
 ROOM_MAX_SIZE = 10
-ROOM_MIN_SIZE = 6
-MAX_ROOMS = 30
+ROOM_MIN_SIZE = 5
+MAX_ROOMS = depends avarage 15
 
 Dungeons(rooms)
 > Contain an exit door
-> Random 
-> Walls obsticals ext
 > enemys(turnbased)
 > loot, chests 
 
@@ -21,8 +19,9 @@ Objects Table:
 > " ' " door
 > ' . ' floor
 > ' $ ' chest 
-> ' ! '
+> ' ! ' enemy
 > ' / ' exit door
+> '   ' stone
 
 
 
