@@ -1,5 +1,5 @@
 import random
-# OUTDATED 
+# OUTDATED OUTDATED
 
 ''' What we need'''
 #Need height of list (y)
