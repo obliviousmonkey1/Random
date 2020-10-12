@@ -64,7 +64,7 @@ for i in range(len(room_list)):
                 
 ######################################################################################################## 
 
-# after 
+# After 
 print('List of rooms, {x, y, w, h}',room_list)
 a = 0
 for i in range(height):
