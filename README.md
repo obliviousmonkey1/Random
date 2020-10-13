@@ -25,7 +25,7 @@ An adventure, dungeon crawling loot game!
 
 #################### WHAT A LEVEL LOOKS LIKE AT THE MOMENT ####################
 ```
-This example has 4 rooms:
+This example level has 4 rooms:
   >  '.' is equivalent to 5ft, most races the character can play can move 30ft on their turn.
   > ' ' or blank is equivalent to stone walls (i.e the areas you cant go).
   > Corridors will be added soon to connect the rooms as well as doors, an exit and loot.
