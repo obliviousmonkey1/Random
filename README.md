@@ -128,9 +128,9 @@ At the moment I am not focused on this aspect of the game. However I will talk a
    
    My plan at the moment is as it is turn based even out of combat (for now). Each enemey will have a set of data telling them what they know about the area.
    If you get into an enemies FOV, (Their FOV will be shown on the screen at all times), Then the enemey will note the positon that you are in depending if
-   its fellow allies are in a certain radius to them it will give them that coord and they will go and search the area as well. using A* pathfinding it will traverse that 
-   position and explore around it if the player character has disapered. The enemy will stay in an ALERTED state for a while and then return back to its NORMAL state. If the 
-   enemey can still see the player character then they will try and pathfind to the player and attack it. 
+   its fellow allies are in a certain radius, it will give them that postions and they will go and search the area as well. Using A* pathfinding it will travel to that 
+   position and explore around it, if the player character has disapered. [The enemy will stay in an ALERTED state for a while and then return back to its NORMAL state]. 
+   If the enemey can still see the player character then it will try and pathfind to the player or in range of the player and attack them. 
    
  > I plan on increasing the enemies diffculty. One: based on how much data they can hold and store about the world, what it can do, and the player character. 
    Two: increase the size of the states availble to it.
