@@ -132,5 +132,6 @@ At the moment I am not focused on this aspect of the game. However I will talk a
    position and explore around it if the player character has disapered. The enemy will stay in an ALERTED state for a while and then return back to its NORMAL state. If the 
    enemey can still see the player character then they will try and pathfind to the player and attack it. 
    
- > I plan on increasing the enemies diffculty. One: based on how much data they can hold and store about the world, what it can do, and the player character. Two increase the      size of the states availble to it.
+ > I plan on increasing the enemies diffculty. One: based on how much data they can hold and store about the world, what it can do, and the player character. 
+   Two: increase the size of the states availble to it.
 ```
