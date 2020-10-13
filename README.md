@@ -40,6 +40,7 @@ The Variables for this room:
  > height = 64
  > room_list = []
  > level = []
+ > connected = True
  > wall_front = 0
  > wall_end = 0
 
