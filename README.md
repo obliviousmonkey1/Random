@@ -11,7 +11,7 @@ MAX_ROOMS = depends avarage 15
 Dungeons(rooms)
 > Contain an exit door
 > enemys(turnbased)
-> loot, chests 
+> loot, chests, ect 
 
 Objects Table:
 > ' # ' wall 
