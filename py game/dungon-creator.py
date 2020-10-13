@@ -4,15 +4,16 @@ CHARACTER_TILES = {'stone': ' ',
                    'floor': '.',
                    'wall': '#'}
 
-numb_rooms = 4
+numb_rooms = 10
 min_room_xy = 5
 max_room_xy = 10
 width = 64
 height = 64
 room_list = []
 level = []
-wall_control_front = 0
-wall_control_end = 0
+connected = True
+wall_front = 0
+wall_end = 0
 
 ############################################# Room Maker ###############################################
 
@@ -64,10 +65,17 @@ for i in (room_list):
         
 for x in range(height):
     try:
-        wall_control_front = [pos for pos, char in enumerate(level[x]) if char == '.'][0]
-        wall_control_end = [pos for pos, char in enumerate(level[x]) if char == '.'][-1]
-        wall_control_end +=1
-        level[x] = level[x][0:wall_control_front] + CHARACTER_TILES['wall'] + (CHARACTER_TILES['floor'] *(wall_control_end - wall_control_front )) + CHARACTER_TILES['wall'] + level[x][wall_control_end+1: -1]
+        wall_front = [pos for pos, char in enumerate(level[x]) if char == '.'][0]
+        wall_end = [pos for pos, char in enumerate(level[x]) if char == '.'][-1]
+        #wall_end +=1
+
+        # if you want rooms not to be connected if they are on the same row
+        if connected == False:
+            level[x] = level[x][0:wall_front] + CHARACTER_TILES['wall'] + level[x][wall_front: wall_end] + CHARACTER_TILES['wall'] + level[x][wall_end+1: -1]
+        
+        #If you want rooms sharing the same row to be conected
+        elif connected == True:
+            level[x] = level[x][0:wall_front] + CHARACTER_TILES['wall'] + (CHARACTER_TILES['floor'] *(wall_end - wall_front )) + CHARACTER_TILES['wall'] + level[x][wall_end+1: -1]
         
     except:
         pass
@@ -87,16 +95,16 @@ for i in range(len(room_list)):
                 
                 add_walls = width - len(level[x])
                 level[x] = level[x] + (CHARACTER_TILES['stone'] * add_walls)
-            #if room_list[i][0]:
-                #add_walls = width - len(level[x])
+            
                 
 ########################################################################################################                
 
-print(room_list)
+print('List of rooms: ', room_list)
 
 a = 0
 for i in range(height+1):
     print(level[i], f'{a}')
     a+=1
             
+
 
