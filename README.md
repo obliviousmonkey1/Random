@@ -114,4 +114,23 @@ The Variables for this room:
 
 ## Enemies
 
-At the moment i am not focused on this aspect of the game. However i will talk about my targets for how the enemies act and behave.
+At the moment I am not focused on this aspect of the game. However I will talk about my targets for how I want the enemies act and behave.
+```
+ > Enemies will have a FOV (Field Of View), Each enemy type(race) will have a diffrent one. Factors that will effect base FOV:
+   > Race
+   > Class (i.e, Warrior or Wizard)
+   > Height 
+   > Wisdom 
+   
+   There are also environmental factors to take into consideration:
+   > How dark or light an area is (If their are tourches in a room or you are holding one then you will be easier to spot, but so are your enemies).
+   > If anything is obscuring their view or if something is obscuring the players character. 
+   
+   My plan at the moment is as it is turn based even out of combat (for now). Each enemey will have a set of data telling them what they know about the area.
+   If you get into an enemies FOV, (Their FOV will be shown on the screen at all times), Then the enemey will note the positon that you are in depending if
+   its fellow allies are in a certain radius to them it will give them that coord and they will go and search the area as well. using A* pathfinding it will traverse that 
+   position and explore around it if the player character has disapered. The enemy will stay in an ALERTED state for a while and then return back to its NORMAL state. If the 
+   enemey can still see the player character then they will try and pathfind to the player and attack it. 
+   
+ > I plan on increasing the enemies diffculty. One: based on how much data they can hold and store about the world, what it can do, and the player character. Two increase the      size of the states availble to it.
+```
