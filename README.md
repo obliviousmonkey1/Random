@@ -1,6 +1,8 @@
 # RPG Roguelike game
 An adventure, dungeon crawling loot game!
-dungeon contains many floors(levels) within those levels are a serious of conected rooms, '.' is equivalent to 5ft: 
+. A single dungeon will contain many floors(levels), within those levels will be serious of rooms connected by corridors. 
+
+## Dungeon levels:
 
 **Dungeons(rooms)**
 ``` 
@@ -21,10 +23,26 @@ dungeon contains many floors(levels) within those levels are a serious of conect
 ```
 
 
-#################### WHAT ROOM COULD LOOK LIKE ####################
+#################### WHAT A LEVEL LOOKS LIKE AT THE MOMENT ####################
 ```
- This example has 4 rooms
- 
+This example has 4 rooms:
+  >  '.' is equivalent to 5ft, most races the character can play can move 30ft on their turn.
+  > ' ' or blank is equivalent to stone walls (i.e the areas you cant go).
+  > Corridors will be added soon to connect the rooms as well as doors, an exit and loot.
+  > Each list that you can see contains the coordinates for that singular room. x = x-axis,
+    y = y-axis, w = width and h = height.
+
+The Variables for this room:
+ > numb_rooms = 4
+ > min_room_xy = 5
+ > max_room_xy = 10
+ > width = 64
+ > height = 64
+ > room_list = []
+ > level = []
+ > wall_front = 0
+ > wall_end = 0
+
   x   y   w  h    x   y   w  h     x   y   w  h    x  y   w  h
 [[22, 16, 7, 6], [51, 22, 7, 10], [53, 42, 8, 9], [3, 60, 7, 9]]
                                                                  0
@@ -93,4 +111,7 @@ dungeon contains many floors(levels) within those levels are a serious of conect
                                                                  63
                                                                  64
 ```                                                                 
-                                                                
+
+## Enemies
+
+At the moment i am not focused on this aspect of the game. However i will talk about my targets for how the enemies act and behave.
