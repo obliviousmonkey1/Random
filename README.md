@@ -14,6 +14,7 @@ Dungeons(rooms)
 > loot, chests, ect 
 
 Objects Table:
+```
 > ' # ' wall 
 > " ' " door
 > ' . ' floor
@@ -21,12 +22,12 @@ Objects Table:
 > ' ! ' enemy
 > ' / ' exit door
 > '   ' stone
-
-
-
-############################## WHAT ROOM COULD LOOK LIKE ########################################
 ```
- **This example has _4 rooms_**
+
+
+#################### WHAT ROOM COULD LOOK LIKE ####################
+```
+ This example has 4 rooms
  
   x   y   w  h    x   y   w  h     x   y   w  h    x  y   w  h
 [[22, 16, 7, 6], [51, 22, 7, 10], [53, 42, 8, 9], [3, 60, 7, 9]]
