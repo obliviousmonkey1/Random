@@ -123,7 +123,7 @@ At the moment I am not focused on this aspect of the game. However I will talk a
    > Wisdom 
    
    There are also environmental factors to take into consideration:
-   > How dark or light an area is (If their are tourches in a room or you are holding one then you will be easier to spot, but so are your enemies).
+   > How dark or light an area is (If there are tourches in a room or you are holding one then you will be easier to spot, but so are your enemies).
    > If anything is obscuring their view or if something is obscuring the players character. 
    
    My plan at the moment is as it is turn based even out of combat (for now). Each enemey will have a set of data telling them what they know about the area.
