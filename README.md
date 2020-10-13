@@ -29,7 +29,7 @@ This example level has 4 rooms:
   >  '.' is equivalent to 5ft, most races the player can choose can move up to 30ft on their turn.
   > ' ' or blank is equivalent to stone walls (i.e the areas you cant go).
   > Corridors will be added soon to connect the rooms. As well as doors, an exit and loot.
-  > Each list that you can see contains the coordinates for that singular room. x = x-axis, 
+  > Each list that you can see contains the coordinates for that singular room: x = x-axis, 
     y = y-axis, w = width and h = height.
 
 The Variables for this room:
